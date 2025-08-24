@@ -2,6 +2,8 @@
 
 Exports Intel Neural Processing Unit (NPU) telemetry to Prometheus for monitoring with Grafana.
 
+![NPU Usage in Grafana](Screenshot%202025-08-24%20at%2012.47.48%20PM.png)
+
 ## Quick Start
 
 ### Direct Python
