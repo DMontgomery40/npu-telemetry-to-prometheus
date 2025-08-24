@@ -2,13 +2,19 @@
 
 Exports Intel Neural Processing Unit (NPU) telemetry to Prometheus for monitoring with Grafana.
 
-![NPU Usage in Grafana](Screenshot%202025-08-24%20at%2012.47.48%20PM.png)
+![NPU Usage in Grafana](assets/npu-grafana-dashboard.png)
 
 ## Quick Start
 
+### Clone Repository
+```bash
+git clone https://github.com/DMontgomery40/npu-telemetry-to-prometheus.git
+cd npu-telemetry-to-prometheus
+```
+
 ### Direct Python
 ```bash
-pip install prometheus_client
+pip install -r requirements.txt
 python3 intel_npu_exporter.py
 ```
 
