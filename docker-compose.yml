@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  intel-npu-exporter:
+    build: .
+    container_name: intel-npu-exporter
+    restart: unless-stopped
+    privileged: true
+    pid: host
+    ports:
+      - 8000:8000
+    volumes:
+      - /sys:/sys:ro
+      - /dev:/dev:ro
+    environment:
+      - NPU_EXPORTER_PORT=8000
