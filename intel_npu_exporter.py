@@ -2,7 +2,8 @@
 """
 Prometheus exporter for Intel NPU usage metrics.
 
-This module exposes basic telemetry about the Intel Neural Processing Unit (NPU)
+This module exposes basic telemetry about the Intel Neural Processing
+Unit (NPU)
 found on certain Intel platforms.  It reads the cumulative runtime from the
 kernel's sysfs, calculates a utilisation percentage and exposes both the
 cumulative runtime and the instantaneous utilisation via a Prometheus HTTP
@@ -145,4 +146,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
